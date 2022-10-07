@@ -4,4 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     App();
     validationForm();
 })
+window.addEventListener('hashchange', e =>{
+    App();
+});
 

@@ -1,3 +1,5 @@
+
+
 const recentPhrases = [];
 
 export default function formResponse(){
@@ -27,7 +29,7 @@ export default function formResponse(){
     $containerForm.style.display = 'none';
     recentPhrases.push(dataPhrase);
 
-    console.log(recentPhrases);
+    
 
     //* show info in html
     const $response = document.createElement('div');
@@ -57,7 +59,6 @@ export default function formResponse(){
         }
 
     });
-    
 }
 
 function getRamdomNumber(arr){
