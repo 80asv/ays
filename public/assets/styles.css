@@ -122,3 +122,24 @@ header nav{
 .item i{
     font-size: 34px;
 }
+
+.recents.container{
+    margin-top: 3rem;
+}
+
+.card-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    border: solid 3px var(--main-color);
+    padding: 1rem;
+}
+
+.card-phrase{
+    margin: 0;
+    display: inline;
+    width: auto;
+}
