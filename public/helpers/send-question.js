@@ -1,27 +1,17 @@
-import Main from "../components/Main.js";
+import formResponse from "./form-response.js";
+import validationForm from "./validation-form.js";
 
 export function sendQuestion(){
     const $form = document.getElementById('form');
-    const $recentPhrases = [];
+    let { phrase, complement} = $form;
+
+    phrase.addEventListener('keyup', validationForm);
+    complement.addEventListener('change', validationForm);
     
     $form.addEventListener('submit', e => {
+        formResponse();
         e.preventDefault();
-        let { phrase, complement } = $form;
-        
-        let savedPhrase = {
-            "phrase": phrase.value,
-            "complement": complement.value
-        }
-
-        $form.classList.add('hidden');
-
-        $recentPhrases.push(savedPhrase);
-
-        console.log($recentPhrases);
-
-    })
-
-
+    });
 }
 
 

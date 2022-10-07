@@ -11,7 +11,7 @@ export default function Main(){
     $mainContainer.innerHTML = `
         <h1>AYS</h1>
         <h3>An application ready to choose for you</h3>
-        <p>Choose a modal verb and then write the question you want AYS to help you solve</p>
+        <p>Choose an adverb and then write the question<br>you want AYS to help you solve</p>
     `;
 
     $mainContainer.appendChild(Form());
