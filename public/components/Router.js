@@ -6,6 +6,7 @@ export default function Router(){
     const $root = document.getElementById('root');
     const $main = document.getElementById('main');
     const $footer = document.getElementById('footer');
+    const $brush = document.querySelector('.color-changer i');
     const $mainContainer = document.querySelector('.container');
 
     if(!hash || hash === "#/"){
@@ -13,5 +14,6 @@ export default function Router(){
     } else if (hash.includes("#/recents")) {
         $main.appendChild(Recents());
         $root.removeChild($footer);
+        $brush.style.color = "var(--main-color)";
     }
 }

@@ -15,7 +15,7 @@ export default function Recents(){
 
     recentPhrases.forEach(el => {
         html += `
-            <div class="card-container">
+            <div class="card-container color">
                 <h2 class="card-question">${el.complement} ${el.phrase}</h2>
                 <p class="card-phrase">${el.response}</p>
             </div>
@@ -23,7 +23,9 @@ export default function Recents(){
         `;    
     });
 
-    $recents.innerHTML = html;
+    $recents.innerHTML = `<h2 class="title-page-cards">Recent doubts resolved</h2>
+                          <br> ${html}`;
+    //$recents.innerHTML = html;
 
     return $recents;
 }
