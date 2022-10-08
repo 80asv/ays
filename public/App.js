@@ -2,7 +2,7 @@ import Header from "./components/Header.js";
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
 import Router from "./components/Router.js";
-import ColorChanger from "./components/colorChanger.js";
+import ColorChanger from "./components/ColorChanger.js";
 
 
 export default function App(){
