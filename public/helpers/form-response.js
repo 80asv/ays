@@ -25,10 +25,10 @@ export default function formResponse(){
     }
     recentPhrases.push(dataPhrase);
     
-    //$loader.style.display = 'block';
-    //$message.style.display = 'block';
-    //btn_submit.disabled = true;
-    //$containerForm.style.display = 'none';
+    $loader.style.display = 'block';
+    $message.style.display = 'block';
+    btn_submit.disabled = true;
+    $containerForm.style.display = 'none';
 
     
 
@@ -38,23 +38,23 @@ export default function formResponse(){
     //
     $response.innerHTML = `
         <h2>${dataPhrase.complement} ${dataPhrase.phrase}</h2>
-        <p>${dataPhrase.response}</p>
-        <button id="btn-back">volver a preguntar</button>
+        <p><i>${dataPhrase.response}</i></p>
+        <button id="btn-back" class="btn-back">Ask again</button>
     `;
     
     $response.style.display = 'none'
     $form.appendChild($response);
-    //
-    //setTimeout(() => {  
-    //    $loader.style.display = 'none';
-    //    $message.style.display = 'none';
-    //    $response.style.display = 'flex'
-    //    btn_submit.disabled = false;
-    //}, 4500);
-    //
+    
+    setTimeout(() => {  
+        $loader.style.display = 'none';
+        $message.style.display = 'none';
+        $response.style.display = 'flex'
+        btn_submit.disabled = false;
+    }, 4500);
+    
     document.addEventListener('click', e => {
         if(e.target.matches('#btn-back')){
-            $response.innerHTML = "";
+            $form.removeChild($response);
             $containerForm.style.display = 'flex';
         }
     });

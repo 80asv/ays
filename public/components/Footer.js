@@ -3,5 +3,6 @@ export default function Footer(){
     //$footer.innerHTML = `Esto es el footer`;
     $footer.id = 'footer';
     $footer.classList.add('color');
+
     return $footer;
 }
