@@ -3,7 +3,7 @@ export default function Collaborator(img, name){
 
     $collab.classList.add('collaborator');
     $collab.innerHTML = `
-        <img src="../../public/assets/icons/${img}" alt="${name}" class="img-collab">
+        <img src="./public/assets/icons/${img}" alt="${name}" class="img-collab">
         <p class="name-collab">${name}</p>
     `;
 

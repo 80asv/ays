@@ -10,16 +10,10 @@ export default function Collaborators(){
         <h2>Collaborators</h2>
     `;
 
-    
-
     $collabs.appendChild($containerCollabs);
-
     $containerCollabs.appendChild(Collaborator("andresSn.png", "Andres Sanabria"));
     $containerCollabs.appendChild(Collaborator("juanB.png", "Juan Bernal"));
     $containerCollabs.appendChild(Collaborator("lauraG.png", "Laura Goyes"));
     $containerCollabs.appendChild(Collaborator("andresR.png", "Andres Rodriguez"));
-
-    
-
     return $collabs;
 }
