@@ -1,7 +1,7 @@
-const adverbs = ['quiza', 'tal vez', 'creo que', 'puede que', 'definitivamente'];
-const phraseBody = ['es una buena opcion', 'es un gran error', 
-                    'no es una buena opcion', 'es una locura! y de las malas', 
-                    'te lleva al camino correcto', 'te puede dar mala suerte', 'es una metida de pata', 'traera suerte en tu vida'];
+const adverbs = ['maybe', 'perhaps', 'I believe that', 'maybe', 'definitely'];
+const phraseBody = ["it's a good option", "it's a big mistake", 
+                    "it is not a good option", "it's crazy!", 
+                    'takes you to the right path', "it can give you bad luck", "it's a blunder", 'will bring luck in your life'];
 
 export const recentPhrases = [];
 

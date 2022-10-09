@@ -19,8 +19,8 @@ export default function Form(){
                     <option value=""> - - - </option>
                     <option value="Should"> Should </option>
                     <option value="Could"> Could </option>
-                    <option value="Maybe"> Maybe </option>
                     <option value="What if"> What if </option>
+                    <option value="What would happen if"> What would happen if</option>
                 </select>
                 <input type="text" class="phrase" name="phrase" id="phrase" placeholder="Complete your phrase" required>
             </div>

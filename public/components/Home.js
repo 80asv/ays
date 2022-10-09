@@ -3,12 +3,13 @@ import { sendQuestion } from "../helpers/send-question.js";
 
 export default function Home(){
     const $home = document.createElement('div');
-    $home.classList.add('container');
+    $home.classList.add('container', 'section');
+    $home.dataset.scroll = 'scroll';
 
     $home.innerHTML = `
         <h1 class="color">AYS</h1>
         <h3>An application ready to choose for you</h3>
-        <p>Choose an adverb and then write the question<br>you want AYS to help you solve</p>
+        <p>Choose a word and then write the question<br>you want AYS to help you solve</p>
     `;
 
     $home.appendChild(Form());

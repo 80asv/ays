@@ -10,7 +10,7 @@ export default function Recents(){
     $recents.classList.add('container');
 
     if(recentPhrases.length === 0){
-        html = `<p class="empty-card">Aqui apareceran las respuesta que AYS ha generado por ti</p>`;
+        html = `<p class="empty-card">Here will appear the answers that AYS has generated for you</p>`;
     }
 
     recentPhrases.forEach(el => {

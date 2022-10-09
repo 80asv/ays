@@ -77,7 +77,9 @@ footer {
     min-height: 100vh;
     color: white; 
     transition: var(--transition);
+    padding:  10rem 10rem 1rem 10rem;
 }
+
 
 .loader{
     margin: 1rem auto;
@@ -228,16 +230,6 @@ header nav{
     transition: var(--transition);
     margin: 0 auto;
 }
- 
-
-
-/* .select, .phrase{
-    padding: 10px;
-    height: 4.5rem;
-    font-size: 24px;
-    border-radius: 5%;
-    min-width: 534px;
-} */
 
 .select{
     width: 13rem;
@@ -266,6 +258,62 @@ header nav{
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.about{
+    text-align: center;
+}
+
+.about p{
+    font-size: 20px;
+}
+
+.about h2, .collaborators h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.collaborators{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    text-align: center;
+}
+
+
+.container-collabs{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.container-collabs img{
+    width: 200px;
+    height: 200px;
+}
+
+.container-collabs p{
+    font-weight: 400;
+}
+
+.group-info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group-info p{
+    font-size: 85%;
+}
+
+.author{
+    text-align: center;
+}
+
+.author i{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 8px;
 }
 
 /* ----------------------------------------- Responsive Design ----------------------------------------- */
@@ -369,6 +417,44 @@ header nav{
     .card-phrase{
         font-size: .8rem;
         text-align: start;
+    }
+
+    footer{
+        padding: 4rem 1rem;
+        padding:  4rem 1rem 1rem 1rem;
+    }
+
+    .about p{
+        font-size: 0.9rem;
+    }
+
+    .about h2, .collaborators h2{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .container-collabs img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .container-collabs{
+        gap: 2rem;
+    }
+
+        
+    .group-info p{
+        font-size: 75%;
+    }
+
+    .group-info {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .group-info p {
+        font-size: 60%;
+        margin: 2px;
     }
 }
 
