@@ -41,7 +41,7 @@ export default function formResponse(){
     
     
     // recolleccion de los datos
-    //response = `${adverbs[getRamdomNumber(adverbs)]} ${phrase.value} ${phraseBody[getRamdomNumber(phraseBody)]}`;
+    response = `${answers[getRamdomNumber(answers)]}`;
     const dataPhrase = {
         phrase: phrase.value,
         response: response
