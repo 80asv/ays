@@ -1,8 +1,3 @@
-//const adverbs = ['maybe', 'perhaps', 'I believe that', 'maybe', 'definitely'];
-// const phraseBody = ["it's a good option", "it's a big mistake", 
-//                     "it is not a good option", "it's crazy!", 
-//                    'takes you to the right path', "it can give you bad luck", "it's a blunder", 'will bring luck in your life'];
-
 const answers = [
     // sin concatenacion
     [
@@ -45,13 +40,13 @@ export default function formResponse(){
     // recolleccion de los datos
 
 
-    let answerModes = getRamdomNumber(answers);
+    let answerModes = Math.round(Math.random());
 
 
-    if(answerModes === 1){
-        response = `${answers[0][getRamdomNumber(answers)]}`;
+    if(answerModes === 0){
+        response = `${answers[0][getRamdomNumber(answers[0])]}`;
     } else {
-        response = `${answers[1][getRamdomNumber(answers)]} ${phrase.value}`;
+        response = `${answers[1][getRamdomNumber(answers[1])]} ${phrase.value}`;
     }
 
     //response = `${answers[getRamdomNumber(answers)]}`;
@@ -65,6 +60,8 @@ export default function formResponse(){
     $message.style.display = 'block';
     btn_submit.disabled = true;
     $containerForm.style.display = 'none';
+
+    console.log(answerModes);
 
     
 
