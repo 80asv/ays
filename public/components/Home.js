@@ -10,6 +10,7 @@ export default function Home(){
         <h1 class="color">AYS</h1>
         <h3>An application ready to choose for you</h3>
         <p>Enter a question in the text field so<br>that AYS can help you make a decision</p>
+        <p class="examples">e.g: Take test tomorrow; go to work today; have a date...</p>
     `;
 
     $home.appendChild(Form());

@@ -5,25 +5,29 @@
 
 const answers = [
     // sin concatenacion
-    "💀",
-    "AHAHAHAHAHHA no",
-    "I mean, why would you even do that?",
-    "First of all let me talk to an expert",
-    "😏 It could be a good idea ",
-    "Why did that thought cross your mind?",
-    "Are you seriously asking me that?",
-    "you should do this right now!",
-    "it's crazy!",
+    [
+        "💀",
+        "AHAHAHAHAHHA no",
+        "I mean, why would you even do that?",
+        "First of all let me talk to an expert",
+        "😏 It could be a good idea ",
+        "Why did that thought cross your mind?",
+        "Are you seriously asking me that?",
+        "you should do this right now!",
+        "it's crazy!"
+    ],
+    
     // Con concatenacion
-    "I don't suggest you",
-    "Hopefully you won't",
-    "I hope you're not going to",
-    "🤔 I think you have not been given permission to",
-    "First of all, I would never suggest you",
-    "it's a great idea that you",
-    "😥 It could hurt you",
-    "👀 It is not the question that I expected, but it seems correct to me that you"
-
+    [
+        "I don't suggest you",
+        "Hopefully you won't",
+        "I hope you're not going to",
+        "🤔 I think you have not been given permission to",
+        "First of all, I would never suggest you",
+        "it's a great idea that you",
+        "😥 It could hurt you",
+        "👀 It is not the question that I expected, but it seems correct to me that you"
+    ]
 ]
 
 
@@ -38,10 +42,19 @@ export default function formResponse(){
     const $loader = document.querySelector('.loader');
     const $message = document.querySelector('.message-form');
     
-    
-    
     // recolleccion de los datos
-    response = `${answers[getRamdomNumber(answers)]}`;
+
+
+    let answerModes = getRamdomNumber(answers);
+
+
+    if(answerModes === 1){
+        response = `${answers[0][getRamdomNumber(answers)]}`;
+    } else {
+        response = `${answers[1][getRamdomNumber(answers)]} ${phrase.value}`;
+    }
+
+    //response = `${answers[getRamdomNumber(answers)]}`;
     const dataPhrase = {
         phrase: phrase.value,
         response: response

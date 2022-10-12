@@ -272,6 +272,12 @@ header nav{
     border-color: var(--main-color);
 }
 
+.examples{
+    font-size: 1rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
 .about{
     text-align: center;
 }
@@ -469,6 +475,10 @@ header nav{
     .group-info p {
         font-size: 60%;
         margin: 2px;
+    }
+
+    .examples{
+        font-size: .9rem;
     }
 }
 
