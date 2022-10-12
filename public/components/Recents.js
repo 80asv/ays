@@ -16,7 +16,7 @@ export default function Recents(){
     recentPhrases.forEach(el => {
         html += `
             <div class="card-container color">
-                <h2 class="card-question">${el.complement} ${el.phrase}</h2>
+                <h2 class="card-question">${el.phrase}</h2>
                 <p class="card-phrase">${el.response}</p>
             </div>
             <br>

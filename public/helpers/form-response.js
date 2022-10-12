@@ -1,7 +1,31 @@
-const adverbs = ['maybe', 'perhaps', 'I believe that', 'maybe', 'definitely'];
-const phraseBody = ["it's a good option", "it's a big mistake", 
-                    "it is not a good option", "it's crazy!", 
-                    'takes you to the right path', "it can give you bad luck", "it's a blunder", 'will bring luck in your life'];
+//const adverbs = ['maybe', 'perhaps', 'I believe that', 'maybe', 'definitely'];
+// const phraseBody = ["it's a good option", "it's a big mistake", 
+//                     "it is not a good option", "it's crazy!", 
+//                    'takes you to the right path', "it can give you bad luck", "it's a blunder", 'will bring luck in your life'];
+
+const answers = [
+    // sin concatenacion
+    "💀",
+    "AHAHAHAHAHHA no",
+    "I mean, why would you even do that?",
+    "First of all let me talk to an expert",
+    "😏 It could be a good idea ",
+    "Why did that thought cross your mind?",
+    "Are you seriously asking me that?",
+    "you should do this right now!",
+    "it's crazy!",
+    // Con concatenacion
+    "I don't suggest you",
+    "Hopefully you won't",
+    "I hope you're not going to",
+    "🤔 I think you have not been given permission to",
+    "First of all, I would never suggest you",
+    "it's a great idea that you",
+    "😥 It could hurt you",
+    "👀 It is not the question that I expected, but it seems correct to me that you"
+
+]
+
 
 export const recentPhrases = [];
 
@@ -17,10 +41,9 @@ export default function formResponse(){
     
     
     // recolleccion de los datos
-    response = `${adverbs[getRamdomNumber(adverbs)]} ${phrase.value} ${phraseBody[getRamdomNumber(phraseBody)]}`;
+    //response = `${adverbs[getRamdomNumber(adverbs)]} ${phrase.value} ${phraseBody[getRamdomNumber(phraseBody)]}`;
     const dataPhrase = {
         phrase: phrase.value,
-        complement: complement.value,
         response: response
     }
     recentPhrases.push(dataPhrase);
@@ -37,7 +60,7 @@ export default function formResponse(){
     $response.classList.add('response');
     //
     $response.innerHTML = `
-        <h2>${dataPhrase.complement} ${dataPhrase.phrase}</h2>
+        <h2>${dataPhrase.phrase}</h2>
         <p><i>${dataPhrase.response}</i></p>
         <button id="btn-back" class="btn-back">Ask again</button>
     `;

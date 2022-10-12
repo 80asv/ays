@@ -9,7 +9,7 @@ export default function Home(){
     $home.innerHTML = `
         <h1 class="color">AYS</h1>
         <h3>An application ready to choose for you</h3>
-        <p>Choose a word and then write the question<br>you want AYS to help you solve</p>
+        <p>Enter a question in the text field so<br>that AYS can help you make a decision</p>
     `;
 
     $home.appendChild(Form());
