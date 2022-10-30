@@ -31,10 +31,10 @@ const answers = [
         "👀 It is not the question that I expected, but it seems correct to me that you",
         "How bad could it be for you to",
         "I suggest you do something other than",
-        "Think about it, it's a wonderful idea",
+        "Think about it, it's a wonderful idea that you",
         "NOO!!!, YOU CAN NOOOOOOOT",
         "😉 obviously if you can",
-        "it must be a joke that",
+        "it must be a joke that you",
         "maybe it will bring you good luck"
     ]
 ]
